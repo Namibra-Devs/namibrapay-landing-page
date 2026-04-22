@@ -5,6 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NamibraPay – Payment Infrastructure for Businesses</title>
+    <meta name="description" content="NamibraPay – The fluid payment infrastructure for businesses across Africa. Accept payments, manage payouts, and scale globally with our robust API suite.">
+    <meta name="keywords" content="payment gateway, africa, fintech, api, payouts, business infrastructure, namibrapay">
+    <meta name="author" content="NamibraPay">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://namibrapay.com/">
+    <meta property="og:title" content="NamibraPay – Payment Infrastructure for Businesses">
+    <meta property="og:description" content="Scale across borders with a unified API. NamibraPay provides the fluid architecture needed to accept payments, manage payouts, and grow your wealth with confidence.">
+    <meta property="og:image" content="https://namibrapay.com/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://namibrapay.com/">
+    <meta property="twitter:title" content="NamibraPay – Payment Infrastructure for Businesses">
+    <meta property="twitter:description" content="Scale across borders with a unified API. NamibraPay provides the fluid architecture needed to accept payments, manage payouts, and grow your wealth with confidence.">
+    <meta property="twitter:image" content="https://namibrapay.com/og-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo/logo.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -149,6 +170,21 @@
             transform: translateY(-1px);
             box-shadow: 0 6px 16px rgba(45, 62, 107, 0.25);
             opacity: 0.95;
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .mobile-menu-toggle span {
+            width: 24px;
+            height: 2px;
+            background: var(--dark);
+            border-radius: 2px;
         }
 
         /* ── HERO ── */
@@ -1216,6 +1252,15 @@
             .nav-links {
                 display: none;
             }
+
+            .mobile-menu-toggle {
+                display: flex;
+            }
+
+            .nav-actions .btn-ghost,
+            .nav-actions .btn-dark {
+                display: none;
+            }
         }
 
         @media (max-width: 600px) {
@@ -1223,8 +1268,37 @@
                 gap: 24px;
             }
 
+            .hero-inner {
+                padding-top: 40px;
+            }
+
+            .hero-text {
+                align-items: center;
+                text-align: center;
+            }
+
             .hero-title {
-                font-size: 32px;
+                font-size: 34px;
+                line-height: 1.1;
+                margin-bottom: 20px;
+            }
+
+            .hero-subtitle {
+                font-size: 15px;
+                margin-bottom: 32px;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+                width: 100%;
+                gap: 14px;
+            }
+
+            .btn-primary,
+            .btn-watch {
+                width: 100%;
+                justify-content: center;
+                padding: 16px;
             }
 
             .sec-title {
@@ -1249,7 +1323,7 @@
         <div class="container">
             <div class="nav-inner">
                 <a href="#" class="logo">
-                    <img src="logo/name-logo.png" alt="NamibrapPay" class="logo-img">
+                    <img src="logo/logo.png" alt="NamibraPay" class="logo-img">
                 </a>
 
                 <ul class="nav-links">
@@ -1261,6 +1335,10 @@
                 <div class="nav-actions">
                     <a href="#" class="btn-ghost">Log In</a>
                     <a href="#" class="btn-dark">Get Started</a>
+                    <div class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </div>
